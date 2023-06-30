@@ -1,0 +1,44 @@
+.header {
+    /*to make it to stick to the top despite all scrolling*/
+    position: sticky;
+    top: 0;
+display: flex;
+/*to make header left & right spaced equally:*/
+justify-content: space-evenly;
+border-bottom: 0.1px solid lightgray;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 100%;
+}
+.header_left{
+    display: flex;
+    /*so that everything comes in one row*/
+}
+.header_left > img{
+    object-fit: contain;
+    /*so that even after scrolls the linkedIN logo stays in place*/
+    height: 40px;
+    margin-right: 10px;
+    
+}
+
+.header_search {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+.header_search > input{
+    outline: none;
+    border: none;
+    background: none;
+    /*removes everything from the serach box borrowed from MUI */
+}
+
+.header_right {
+    display: flex;
+
+}

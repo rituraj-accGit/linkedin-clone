@@ -1,0 +1,81 @@
+.sidebar{
+    top: 80px;
+    position: sticky;
+    flex: 0.2;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+}
+
+.sidebar__avatar{
+    margin-bottom: 10px;
+}
+
+.sidebar__top{/*half border effect*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+/*to make the image drop innnside the avatar*/
+/*height has error to b in % though, should be px*/
+.sidebar__top > img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.sidebar__stat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__top > h2 {
+    font-size: 18px;
+}
+
+.sidebar__top > h4 {
+    color: gray;
+    font-size: 12px;
+
+}
+
+.sidebar__stats {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sidebar__stat > p{
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar__statNumber {
+    font-weight: bold;
+    color: #8a66c2 !important;
+}
+
+/*top finished*/
+
+.sidebar__bottom {/*makes the 'recent' box*/
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
