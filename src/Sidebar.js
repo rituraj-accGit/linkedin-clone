@@ -2,8 +2,14 @@ import React from 'react';
 import "./Sidebar.css";
 import { Avatar } from '@mui/material';
 
+/*Github sync check*/
 export default function Sidebar() {
-  
+  const recentItem= (topic) => (
+    <div className="sidebar__recentItem">
+      <span className='sidebar__hash'>#</span>
+      <p>{topic}</p>
+    </div>
+  ); /* not a component rather a function to generate hashtags*/
 
   return (
     <div className='sidebar'>
@@ -29,6 +35,11 @@ export default function Sidebar() {
 
         <div className="sidebar__bottom">
           <p>Recent</p>
+          {recentItem('reactjs')}
+          {recentItem('programming')}
+          {recentItem('devOps')}
+          {recentItem('AI & deep learning')}
+          {recentItem('trade')}
         </div>
     </div>
   )
