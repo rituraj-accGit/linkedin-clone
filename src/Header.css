@@ -3,6 +3,8 @@
     position: sticky;
     top: 0;
 display: flex;
+/*to make the background so that it camouflages into the feed*/
+background-color: white;
 /*to make header left & right spaced equally:*/
 justify-content: space-evenly;
 border-bottom: 0.1px solid lightgray;
